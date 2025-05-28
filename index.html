@@ -5,21 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
-   
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <div class="particles" id="particles"></div>
     
-   
-    <nav class="contenedor-nav-principal">
-        <ul>
-            <li class="lista-nav-principal"><a href="#hola">HOLA</a></li>
-            <li class="lista-nav-principal"><a href="#conocimientos">CONOCIMIENTOS</a></li>
-            <li class="lista-nav-principal"><a href="#proyectos">PROYECTOS</a></li>
-            <li class="lista-nav-principal"><a class="link-contacto-nav-principal" href="#contacto">CONTACTO</a></li>
-        </ul>
-    </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark contenedor-nav-principal">
+  <div class="container-fluid">
+    <a class="navbar-brand titulo-principal m-0" href="#hola" style="font-size:2rem;"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#hola">HOLA</a></li>
+        <li class="nav-item"><a class="nav-link" href="#conocimientos">CONOCIMIENTOS</a></li>
+        <li class="nav-item"><a class="nav-link" href="#proyectos">PROYECTOS</a></li>
+        <li class="nav-item"><a class="nav-link link-contacto-nav-principal" href="#contacto">CONTACTO</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
     <main>
         
@@ -147,6 +155,7 @@
                         ¿Tenés alguna idea en mente y querés verla materializada? Buscame por mis redes, escribime y ¡charlamos!
                     </p>
                     <section class="contenedor-links-redes">
+                        <h2 class="visually-hidden">Redes sociales</h2>
                         <ul class="links-redes-sociales">
                             
                             <li>
@@ -174,7 +183,7 @@
                
                 <div class="apartado-escribime">
                     <h2>Escribime</h2>
-                    <form class="apartado-escribime" action="">
+                    <form class="apartado-escribime" action="#">
                         <div class="campos-nombre-apellido">
                             <div class="campo-nombre">
                                 <label for="nombre">Nombre *</label>
@@ -192,9 +201,7 @@
                         <label for="mensaje">Mensaje *</label>
                         <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escriba su mensaje aquí"></textarea>
 
-                        <label for="enviar">
-                            <input class="enviar-formulario" type="submit" name="enviar" value="Enviar">
-                        </label>
+                        <input class="enviar-formulario" type="submit" name="enviar" value="Enviar">
                     </form>
                 </div>
             </div>
@@ -235,6 +242,7 @@
         </div>
     </footer>
 
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="js/bubbles.js"></script>
 </body>
 </html>
